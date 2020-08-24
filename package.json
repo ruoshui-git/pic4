@@ -1,0 +1,38 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "routify -b && rollup -c",
+    "dev": "run-p watch:routify watch:rollup",
+    "watch:rollup": "rollup -c -w",
+    "watch:routify": "routify",
+    "start": "sirv public --single",
+    "validate": "svelte-check",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-typescript": "^4.0.0",
+    "@smui/button": "^1.0.0",
+    "@sveltech/routify": "^1.1.1-1",
+    "@tsconfig/svelte": "^1.0.0",
+    "@types/lodash.debounce": "^4.0.6",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.3.4",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^6.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^1.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "lodash.debounce": "^4.0.8",
+    "pinyin": "^2.9.1",
+    "sirv-cli": "^1.0.0",
+    "tauri": "^0.12.0"
+  }
+}
